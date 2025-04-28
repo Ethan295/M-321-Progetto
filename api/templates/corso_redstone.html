@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %}Corso Redstone{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="text-center mb-5">
+                <span class="badge bg-warning text-dark mb-3">Corso Avanzato</span>
+                <h1 class="fw-bold mb-3">Redstone: Meccanismi Avanzati</h1>
+                <p class="lead text-muted">Domina l'arte della Redstone e crea circuiti complessi</p>
+            </div>
+
+            <div class="card shadow-sm mb-5">
+                <div class="card-header bg-white border-bottom-0">
+                    <h2 class="h4 mb-0 fw-bold text-center">Cosa imparerai</h2>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex">
+                            <i class="bi bi-lightning-charge-fill text-warning me-3 fs-5"></i>
+                            <div>
+                                <h5 class="fw-bold mb-1">Come funziona la Redstone</h5>
+                                <p class="text-muted mb-0">Principi elettrici e logici in Minecraft</p>
+                            </div>
+                        </li>
+                        <li class="mb-3 d-flex">
+                            <i class="bi bi-lightning-charge-fill text-warning me-3 fs-5"></i>
+                            <div>
+                                <h5 class="fw-bold mb-1">Costruzione di meccanismi automatici</h5>
+                                <p class="text-muted mb-0">Dalle fattorie automatiche ai sistemi complessi</p>
+                            </div>
+                        </li>
+                        <li class="mb-3 d-flex">
+                            <i class="bi bi-lightning-charge-fill text-warning me-3 fs-5"></i>
+                            <div>
+                                <h5 class="fw-bold mb-1">Utilizzo di pistoni e altri componenti</h5>
+                                <p class="text-muted mb-0">Trucchi e segreti dei componenti Redstone</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="{{ url_for('home') }}" class="btn btn-outline-secondary">
+                    <i class="bi bi-arrow-left me-2"></i>Torna alla Home
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
